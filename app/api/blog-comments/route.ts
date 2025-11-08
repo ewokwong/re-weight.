@@ -13,15 +13,30 @@ export async function GET(request: NextRequest) {
   try {
     const db = await getDatabase()
     
-    // Get blog entry
-    const blog = await db.collection(collections.blogs).findOne({ slug })
+    // Get blog entry - ensure it exists and has comments array initialized
+    let blog = await db.collection(collections.blogs).findOne({ slug })
     
-    if (!blog || !blog.comments) {
+    // If blog doesn't exist, initialize it (but don't overwrite if it exists with comments)
+    if (!blog) {
+      await db.collection(collections.blogs).insertOne({
+        slug,
+        views: 0,
+        likes: 0,
+        comments: [],
+        viewed_by: [],
+        liked_by: [],
+        updated_at: new Date(),
+      })
+      blog = await db.collection(collections.blogs).findOne({ slug })
+    }
+    
+    // Ensure comments array exists (handle case where blog exists but comments field is missing)
+    if (!blog || !Array.isArray(blog.comments)) {
       return NextResponse.json({ comments: [] })
     }
 
     // Organize comments into a tree structure
-    const comments = blog.comments || []
+    const comments = blog.comments
     const commentMap = new Map()
     const rootComments: any[] = []
 
@@ -92,6 +107,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Add comment to blog's comments array
+    // $push will automatically create the comments array if it doesn't exist
     // Use $setOnInsert only for fields that should only exist on new documents
     // Always update updated_at for existing documents
     await db.collection(collections.blogs).updateOne(

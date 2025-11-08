@@ -22,23 +22,25 @@ export async function GET(request: NextRequest) {
   try {
     const db = await getDatabase()
     
-    // Get or create blog entry
-    let blog = await db.collection(collections.blogs).findOne({ slug })
-    
-    if (!blog) {
-      // Initialize blog entry
-      await db.collection(collections.blogs).insertOne({
-        slug,
-        views: 0,
-        likes: 0,
-        comments: [],
-        viewed_by: [],
-        liked_by: [],
-        updated_at: new Date(),
-      })
-      // Fetch the newly created blog
-      blog = await db.collection(collections.blogs).findOne({ slug })
-    }
+    // Get or create blog entry atomically
+    // Use findOneAndUpdate with upsert to ensure we don't lose data in race conditions
+    const blog = await db.collection(collections.blogs).findOneAndUpdate(
+      { slug },
+      {
+        $setOnInsert: {
+          views: 0,
+          likes: 0,
+          comments: [],
+          viewed_by: [],
+          liked_by: [],
+          updated_at: new Date(),
+        },
+      },
+      {
+        upsert: true,
+        returnDocument: "after",
+      }
+    )
 
     // Check if this visitor has viewed/liked
     const visitorId = getVisitorId(request)
