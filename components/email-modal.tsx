@@ -48,9 +48,8 @@ export default function EmailModal({ isOpen, onClose }: EmailModalProps) {
             <>
               <h2 className="text-2xl font-bold mb-3">Join Our Community</h2>
               <p className="text-muted-foreground mb-6">
-                Get weekly insights and exclusive strategies for sustainable weight management.
+                Get our audio lessons delivered straight to your inbox. Learn on the go - while driving, working, or walking. No reading required.
               </p>
-
               <form onSubmit={handleSubmit} className="space-y-4">
                 <input
                   type="email"
@@ -64,7 +63,7 @@ export default function EmailModal({ isOpen, onClose }: EmailModalProps) {
                   type="submit"
                   className="w-full px-4 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors"
                 >
-                  Subscribe
+                  Start my learning journey
                 </button>
               </form>
             </>

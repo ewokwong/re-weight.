@@ -12,7 +12,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "The Weight Management Movement",
-  description: "Helping people not only lose the weight, but keep it off for life.",
+  description: "Helping you not only lose the weight, but keep it off for life.",
   icons: {
     icon: "/icon.svg",
     shortcut: "/icon.svg",
