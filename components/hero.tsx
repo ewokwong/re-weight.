@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState, useRef } from "react"
+import { SITE_DESCRIPTION } from "@/lib/constants"
 
 interface HeroProps {
   onCTA: () => void
@@ -113,27 +114,9 @@ export default function Hero({ onCTA }: HeroProps) {
           re:{typedText}
           <span className="animate-pulse">|</span>
         </h1>
-
-        {/* Banner Visual: re:think, re:define, re:connect, re:weight */}
-        {/* <div className="mb-8 flex flex-wrap justify-center items-center gap-4 md:gap-6">
-          <div className="px-4 py-2 bg-primary-foreground/10 backdrop-blur-sm rounded-full border border-primary-foreground/20">
-            <span className="text-lg md:text-xl font-semibold text-primary-foreground">re:think</span>
-          </div>
-          <div className="px-4 py-2 bg-primary-foreground/10 backdrop-blur-sm rounded-full border border-primary-foreground/20">
-            <span className="text-lg md:text-xl font-semibold text-primary-foreground">re:define</span>
-          </div>
-          <div className="px-4 py-2 bg-primary-foreground/10 backdrop-blur-sm rounded-full border border-primary-foreground/20">
-            <span className="text-lg md:text-xl font-semibold text-primary-foreground">re:connect</span>
-          </div>
-          <div className="px-4 py-2 bg-secondary/20 backdrop-blur-sm rounded-full border border-secondary/40">
-            <span className="text-lg md:text-xl font-semibold text-primary-foreground">re:weight</span>
-          </div>
-        </div> */}
-
         <div className="h-1 w-32 bg-secondary mx-auto mb-6"></div>
-
-        <p className="text-lg md:text-xl text-primary-foreground/75 mb-6 max-w-2xl mx-auto text-balance font-normal tracking-wide letter-spacing-wide">
-          For those who want to live freely - without weight holding them back.
+        <p className="text-lg md:text-xl text-primary-foreground/75 mb-6 mx-auto whitespace-nowrap font-normal tracking-wide letter-spacing-wide">
+          {SITE_DESCRIPTION}
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
