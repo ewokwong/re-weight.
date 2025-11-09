@@ -5,6 +5,7 @@ import Link from "next/link"
 import Hero from "@/components/hero"
 import BlogCard from "@/components/blog-card"
 import EmailModal from "@/components/email-modal"
+import QuestionForm from "@/components/question-form"
 import { mockBlogs } from "@/lib/blog-data"
 
 interface BlogWithStats {
@@ -115,16 +116,13 @@ export default function Home() {
 
       {/* Contact Section */}
       <section className="py-20 px-4 md:px-8 border-t border-border">
-        <div className="max-w-2xl mx-auto text-center">
-          <p className="text-lg md:text-xl text-muted-foreground mb-6">
-            Got a question? Send us an email and we'll either answer you personally or in a post!
-          </p>
-          <a
-            href="mailto:TheWeightManagementMovement@gmail.com"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-foreground text-background rounded-full font-medium text-lg hover:opacity-90 transition-opacity"
-          >
-            Send us an email
-          </a>
+        <div className="max-w-2xl mx-auto">
+          <div className="text-center mb-8">
+            <p className="text-lg md:text-xl text-muted-foreground mb-6">
+              Got a question? Send us a message and we'll either answer you personally or in a post!
+            </p>
+          </div>
+          <QuestionForm />
         </div>
       </section>
 
