@@ -91,7 +91,7 @@ export default function Hero({ onCTA }: HeroProps) {
 
   return (
     <section
-      className="relative min-h-screen bg-primary text-primary-foreground flex items-center justify-center py-20 px-4 overflow-hidden"
+      className="relative min-h-screen bg-primary text-primary-foreground flex items-center justify-center py-20 px-6 sm:px-8 md:px-12 overflow-hidden"
       style={{ opacity: scrollOpacity, transition: "opacity 0.1s ease-out" }}
     >
       {/* Video Background */}
@@ -109,13 +109,13 @@ export default function Hero({ onCTA }: HeroProps) {
       
       <div className="absolute inset-0 bg-primary/60"></div>
 
-      <div className="relative z-10 max-w-4xl mx-auto text-center">
+      <div className="relative z-10 max-w-4xl mx-auto text-center px-2 sm:px-0">
         <h1 className="text-4xl sm:text-5xl md:text-8xl font-black mb-6 sm:mb-8 text-balance leading-tight tracking-tight">
           re:{typedText}
           <span className="animate-pulse">|</span>
         </h1>
         <div className="h-1 w-24 sm:w-32 bg-secondary mx-auto mb-4 sm:mb-6"></div>
-        <p className="text-sm sm:text-base md:text-xl text-primary-foreground/75 mb-4 sm:mb-6 mx-auto sm:whitespace-nowrap font-normal tracking-wide letter-spacing-wide px-2">
+        <p className="text-sm sm:text-base md:text-xl text-primary-foreground/75 mb-4 sm:mb-6 mx-auto sm:whitespace-nowrap font-normal tracking-wide letter-spacing-wide">
           {SITE_DESCRIPTION}
         </p>
 

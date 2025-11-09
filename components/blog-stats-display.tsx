@@ -30,20 +30,20 @@ export default function BlogStatsDisplay({
 
   if (isLoading) {
     return (
-      <div className="flex gap-8 py-8 border-t border-b border-border mb-12">
+      <div className="flex gap-4 sm:gap-8 py-8 border-t border-b border-border mb-12">
         <div className="flex items-center gap-2 text-muted-foreground">
-          <Eye className="w-5 h-5" />
-          <span className="text-sm">Loading...</span>
+          <Eye className="w-4 h-4 sm:w-5 sm:h-5" />
+          <span className="text-xs sm:text-sm">Loading...</span>
         </div>
       </div>
     )
   }
 
   return (
-    <div className="flex gap-8 py-8 border-t border-b border-border mb-12">
+    <div className="flex flex-wrap gap-4 sm:gap-8 py-8 border-t border-b border-border mb-12">
       <div className="flex items-center gap-2 text-muted-foreground">
-        <Eye className="w-5 h-5" />
-        <span className="text-sm">{stats.views.toLocaleString()} views</span>
+        <Eye className="w-4 h-4 sm:w-5 sm:h-5" />
+        <span className="text-xs sm:text-sm">{stats.views.toLocaleString()} views</span>
       </div>
       <button
         onClick={handleLike}
@@ -54,12 +54,12 @@ export default function BlogStatsDisplay({
             : "hover:text-foreground cursor-pointer"
         }`}
       >
-        <Heart className={`w-5 h-5 ${hasLiked ? "fill-current" : ""}`} />
-        <span className="text-sm">{stats.likes.toLocaleString()} likes</span>
+        <Heart className={`w-4 h-4 sm:w-5 sm:h-5 ${hasLiked ? "fill-current" : ""}`} />
+        <span className="text-xs sm:text-sm">{stats.likes.toLocaleString()} likes</span>
       </button>
       <div className="flex items-center gap-2 text-muted-foreground">
-        <MessageCircle className="w-5 h-5" />
-        <span className="text-sm">{stats.comments.toLocaleString()} comments</span>
+        <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5" />
+        <span className="text-xs sm:text-sm">{stats.comments.toLocaleString()} comments</span>
       </div>
     </div>
   )

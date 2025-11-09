@@ -22,7 +22,7 @@ export default function BlogCard({ blog }: BlogCardProps) {
   return (
     <Link href={`/${blog.slug}`}>
       <article className="group bg-card rounded-lg overflow-hidden border border-border hover:shadow-lg transition-shadow cursor-pointer h-full">
-        <div className="p-6">
+        <div className="p-4 sm:p-6">
           <p className="text-sm text-muted-foreground mb-3">{blog.date}</p>
 
           <h3 className="text-xl font-bold mb-3 line-clamp-2 group-hover:text-primary transition-colors">

@@ -25,7 +25,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     <main className="bg-background text-foreground">
       {/* Back Button */}
       <div className="border-b border-border">
-        <div className="max-w-4xl mx-auto px-4 md:px-8 py-6">
+        <div className="max-w-4xl mx-auto px-6 sm:px-8 md:px-12 py-6">
           <Link
             href="/"
             className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors w-fit"
@@ -37,7 +37,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       </div>
 
       {/* Article Content */}
-      <article className="max-w-4xl mx-auto px-4 md:px-8 pt-16 pb-8">
+      <article className="max-w-4xl mx-auto px-6 sm:px-8 md:px-12 pt-16 pb-8">
         {/* Header */}
         <header className="mb-12">
           <div className="mb-6">
@@ -56,12 +56,12 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         />
 
         {/* Blog Content */}
-        <div className="mt-8 [&>*:last-child]:mb-0">
+        <div className="mt-8 [&>*:last-child]:mb-0 px-2 sm:px-0">
           <MarkdownRenderer content={blog.content} />
         </div>
         
         {/* Email Subscription - At bottom of content */}
-        <div className="mt-12 max-w-2xl mx-auto">
+        <div className="mt-12 max-w-2xl mx-auto px-2 sm:px-0">
           <EmailSubscription />
         </div>
       </article>
@@ -71,7 +71,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
       {/* Related Articles Footer */}
       <div className="border-t border-border py-12 mt-16">
-        <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
+        <div className="max-w-4xl mx-auto px-6 sm:px-8 md:px-12 text-center">
           <p className="text-muted-foreground mb-6">Want to explore more articles?</p>
           <SmoothScrollLink
             href="/"

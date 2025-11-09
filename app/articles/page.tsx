@@ -71,7 +71,7 @@ export default function AllArticles() {
     <main className="bg-background text-foreground">
       {/* Back Button */}
       <div className="border-b border-border">
-        <div className="max-w-4xl mx-auto px-4 md:px-8 py-6">
+        <div className="max-w-4xl mx-auto px-6 sm:px-8 md:px-12 py-6">
           <Link
             href="/"
             className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors w-fit"
@@ -83,16 +83,16 @@ export default function AllArticles() {
       </div>
 
       {/* All Articles */}
-      <section className="py-20 px-4 md:px-8">
+      <section className="py-20 px-6 sm:px-8 md:px-12">
         <div className="max-w-6xl mx-auto">
-          <div className="mb-12 text-center">
+          <div className="mb-12 text-center px-2 sm:px-0">
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-balance">All Articles</h1>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-8">
               Explore our complete collection of expert insights and actionable strategies for your weight management journey.
             </p>
             
             {/* Search Bar */}
-            <div className="max-w-xl mx-auto">
+            <div className="max-w-xl mx-auto px-2 sm:px-0">
               <div className="relative">
                 <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-muted-foreground" />
                 <input
@@ -106,7 +106,7 @@ export default function AllArticles() {
             </div>
           </div>
 
-          <div className="max-w-2xl mx-auto">
+          <div className="max-w-2xl mx-auto px-2 sm:px-0">
             {filteredBlogs.length > 0 ? (
               filteredBlogs.map((blog, index) => (
                 <div key={blog.id} className={index > 0 ? "mt-8" : ""}>

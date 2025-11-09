@@ -170,7 +170,7 @@ export default function CommentsSection({
   }, 0)
 
   return (
-    <div className="max-w-4xl mx-auto px-4 md:px-8 py-16 border-t border-border">
+    <div className="max-w-4xl mx-auto px-6 sm:px-8 md:px-12 py-16 border-t border-border">
       <div className="mb-8">
         <div className="flex items-center gap-2 mb-2">
           <MessageCircle className="w-6 h-6 text-muted-foreground" />

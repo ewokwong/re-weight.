@@ -74,7 +74,7 @@ const markdownComponents: Components = {
 
 export default function MarkdownRenderer({ content }: MarkdownRendererProps) {
   return (
-    <div className="max-w-none">
+    <div className="max-w-full overflow-x-auto">
       <ReactMarkdown components={markdownComponents}>
         {content}
       </ReactMarkdown>

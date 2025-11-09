@@ -86,13 +86,13 @@ export default function Home() {
     <main className="bg-background text-foreground">
       <Hero onCTA={() => setModalOpen(true)} />
 
-      <section id="articles" className="py-20 px-4 md:px-8 scroll-mt-20">
+      <section id="articles" className="py-20 px-6 sm:px-8 md:px-12 scroll-mt-20">
         <div className="max-w-6xl mx-auto">
           <div className="mb-12 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">Latest Articles</h2>
           </div>
 
-          <div className="max-w-2xl mx-auto">
+          <div className="max-w-2xl mx-auto px-2 sm:px-0">
             {blogs.slice(0, 5).map((blog, index) => (
               <div key={blog.id} className={index > 0 ? "mt-8" : ""}>
                 <BlogCard blog={blog} />
@@ -115,8 +115,8 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 px-4 md:px-8 border-t border-border">
-        <div className="max-w-2xl mx-auto">
+      <section className="py-20 px-6 sm:px-8 md:px-12 border-t border-border">
+        <div className="max-w-2xl mx-auto px-2 sm:px-0">
           <div className="text-center mb-8">
             <p className="text-lg md:text-xl text-muted-foreground mb-6">
               Got a question? Send us a message and we'll either answer you personally or in a post!
