@@ -84,7 +84,16 @@ export interface Blog {
       likes: 0,
       comments: 0,
       slug: "what-is-reweight",
-      content: `A`,
+      content: `We're frustrated with the current dieting culture. Keto, carnivore, intermittent fasting - it's overcomplicated. Don't even get us started on calorie counting. Prescribing 1800 calories to everyone is a dangerous path to eating disorders, body dymorphia and ruined metabolisms.
+      
+We've seen countless clients stuck in this trap of yo-yo dieting: working hard at the gym, eating clean, then gaining it all back in a week. They're stuck in this never-ending cycle - and it begins to take over their life. What's the point of losing weight if you can't sustain it?
+
+Living healthy and happy should never be this way. Imagine if you could put all of that mental energy into living the life you want?
+
+That's why we're shifting from **Weight Loss** to **Weight Management**.
+
+Our goal is to help everyone build systems that allow them to live the life they want - without being held back by this fear of gaining weight.
+`,
     },
   ]
   

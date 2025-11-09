@@ -117,7 +117,7 @@ export default function Home() {
       <section className="py-20 px-4 md:px-8 border-t border-border">
         <div className="max-w-2xl mx-auto text-center">
           <p className="text-lg md:text-xl text-muted-foreground mb-6">
-            Got a specific question? Send us an email and we'll either answer you personally or in a post!
+            Got a question? Send us an email and we'll either answer you personally or in a post!
           </p>
           <a
             href="mailto:TheWeightManagementMovement@gmail.com"
