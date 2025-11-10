@@ -27,11 +27,11 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       <div className="border-b border-border">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 md:px-12 py-6">
           <Link
-            href="/"
+            href="/articles"
             className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors w-fit"
           >
             <ArrowLeft className="w-4 h-4" />
-            Back to Articles
+            Back to all Articles
           </Link>
         </div>
       </div>

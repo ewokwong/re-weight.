@@ -473,7 +473,7 @@ As always, seek a professional for professional advice if you're feeling stuck. 
 <strong style="font-size: 1.1rem; display: block; margin-bottom: 0.5rem;">Key Takeaways:</strong>
 <ul style="margin: 0; padding-left: 1.5rem; list-style-type: disc;">
 <li>Constant food thoughts may be your body signaling it's hungry or needs more calories</li>
-<li>Examine your relationship with food - is it a reward or fuel?</li>
+<li>How do you view food - is it a reward or fuel?</li>
 <li>Years of restriction create mental cravings even when physically satisfied</li>
 <li>Give yourself permission to eat anything, but you don't have to eat everything</li>
 <li>Learn to trust that you can eat it and be okay</li>
@@ -482,43 +482,21 @@ As always, seek a professional for professional advice if you're feeling stuck. 
 </ul>
 </div>
 
-If you find yourself constantly thinking about food, you're not alone. This mental preoccupation can be exhausting and frustrating, especially when you're trying to maintain a healthy relationship with eating.
-
-The good news? There are practical steps you can take to understand what's really happening and find peace with food.
-
-## Check yourself first
-
 The first and most important check is to ask yourself: **are you really fueling your body correctly to feel energized and strong?**
 
-Sometimes, constant food thoughts are simply your body's way of telling you it's hungry or might need more calories. If you've been in a significant calorie deficit or restricting certain foods, your body will signal its needs - and those signals can manifest as obsessive thoughts about food.
+Sometimes, constant food thoughts are simply your body's way of telling you it's hungry. If you've been in a calorie deficit or restricting certain foods, your body will signal its needs - and those signals can manifest as obsessive thoughts about food.
 
-**Ask yourself:**
-- Are you eating enough throughout the day?
-- Do you feel energized and strong, or tired and weak?
-- Are you experiencing physical hunger signals, or is this purely mental?
+**Really ask yourself: are you eating enough throughout the day to feel strong and energized?**
 
 If you're genuinely hungry or under-fueled, increasing your calories and ensuring you're eating balanced meals can significantly reduce food preoccupation.
 
-## Examine Your Relationship with Food
+## How do you view food?
 
 Next, view your relationship with food: **is it more of a reward and enjoyment, or a way to fuel your body?**
 
-Everyone will be different, and there's no "right" answer. However, if you have restricted your body from what it wants or needs for years, of course mentally you are going to yearn for it. The forbidden fruit always seems more appealing.
+Everyone will be different, and there's no "right" answer. However, if you have restricted for years, of course mentally you are going to see it as some sort of reward and yearn for it.
 
-**Consider:**
-- Do you view certain foods as "bad" or "off-limits"?
-- Do you use food as a reward after completing tasks or workouts?
-- Have you been restricting foods for an extended period?
-
-Understanding your relationship with food is the first step toward changing it.
-
-## Give Yourself Permission
-
-For me, the best outcome came from realizing that **I can eat it whenever I want, but that doesn't mean I have to eat the whole pack**.
-
-This shift took a while to learn - but slowly I learned to trust that I can eat it and be okay. When you remove the restriction and the "forbidden" label, food loses its power over you.
-
-**The key insight:** When nothing is off-limits, nothing becomes an obsession. You can have a cookie today, tomorrow, and next week - so there's no urgency to eat the entire box right now.
+For me, the best outcome came from realizing that **I can eat it whenever I want and be okay, but that doesn't mean I have to eat the whole thing**.
 
 ## Pay Attention to How Food Makes You Feel
 
@@ -534,13 +512,7 @@ This awareness helps you make choices that honor both your enjoyment and your we
 
 ## Make Informed Choices
 
-You've got this. The journey from constant food thoughts to food freedom isn't linear, but it's absolutely possible.
-
-**Remember:**
-- Your body's signals matter - listen to physical hunger
-- Restriction creates obsession - permission creates peace
-- Awareness of how food affects you leads to better choices
-- You can enjoy food without it controlling your thoughts
+You've got this. The journey from constant food thoughts to food freedom isn't straightforward, but it's definitely possible.
 
 ---
 
