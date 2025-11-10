@@ -2,6 +2,7 @@
 
 import ReactMarkdown from "react-markdown"
 import type { Components } from "react-markdown"
+import rehypeRaw from "rehype-raw"
 
 interface MarkdownRendererProps {
   content: string
@@ -70,12 +71,15 @@ const markdownComponents: Components = {
   hr: () => (
     <hr className="border-border my-8" />
   ),
+  div: ({ children, ...props }) => (
+    <div {...props}>{children}</div>
+  ),
 }
 
 export default function MarkdownRenderer({ content }: MarkdownRendererProps) {
   return (
     <div className="max-w-full overflow-x-auto">
-      <ReactMarkdown components={markdownComponents}>
+      <ReactMarkdown components={markdownComponents} rehypePlugins={[rehypeRaw]}>
         {content}
       </ReactMarkdown>
     </div>
