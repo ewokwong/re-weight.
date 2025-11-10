@@ -10,17 +10,17 @@ interface MarkdownRendererProps {
 
 const markdownComponents: Components = {
   h1: ({ children }) => (
-    <h1 className="text-3xl font-bold text-foreground border-b border-border pb-3 mt-12 mb-6 first:mt-0">
+    <h1 className="text-3xl font-bold text-foreground border-b border-border pb-3 mt-16 mb-8 first:mt-0">
       {children}
     </h1>
   ),
   h2: ({ children }) => (
-    <h2 className="text-2xl font-bold text-foreground mt-10 mb-4">
+    <h2 className="text-2xl font-bold text-foreground mt-14 mb-6">
       {children}
     </h2>
   ),
   h3: ({ children }) => (
-    <h3 className="text-xl font-bold text-foreground mt-8 mb-3">
+    <h3 className="text-xl font-bold text-foreground mt-10 mb-5">
       {children}
     </h3>
   ),
@@ -70,6 +70,13 @@ const markdownComponents: Components = {
   ),
   hr: () => (
     <hr className="border-border my-8" />
+  ),
+  img: ({ src, alt }) => (
+    <img 
+      src={src} 
+      alt={alt || ""} 
+      className="w-full max-w-2xl mx-auto my-8 rounded-lg object-cover"
+    />
   ),
   div: ({ children, ...props }) => (
     <div {...props}>{children}</div>

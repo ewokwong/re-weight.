@@ -220,6 +220,121 @@ Personally, I rest until I feel like I am ready to push the muscle again. I've f
 Always remember: you can't out train a bad diet - if your goal is weight loss, make sure you are in a caloric deficit that matches your goals.
 `,
     },
+    {
+      id: 3,
+      title: "A beginner's guide to: Calorie density and food choices",
+      excerpt: "",
+      date: "Feb 10, 2025",
+      views: 0,
+      likes: 0,
+      comments: 0,
+      slug: "calorie-density-food-choices",
+      content: `Whilst one part of the weight loss equations is being in a caloric deficit, this doesn't mean that you have to starve yourself! It's not just how much to eat, but what are you actually eating?
+
+Ask yourself this:
+
+![Calorie density comparison](/calorie-substitution.jpg)
+
+**What would make you feel more physically full? A handful of nuts, or 2 bowls of strawberries?**
+
+Making these informed switches will make your weight loss journey 100x easier and won't leave you feeling starved!
+
+For a 500 calorie daily deficit - it's as easy as making the following substitutions:
+
+> Swap rice for cauliflower rice, swap soda for diet soda, remove the dressing from your salad and replace the protein with a lean source of protein!
+
+## Here are some of my personal favourite sources of macronutrients
+
+*(Note: the values provided are estimates only)*
+
+### Proteins (1g of protein = 4 calories)
+
+**Less calorically dense:**
+
+- Cottage Cheese: 0.9 calories / gram
+- Greek Yoghurt: 0.59 calories / gram
+- Chicken Breast: 1.65 calories / gram
+- Ham / processed meats: 1.4 calories / gram
+- Lean turkey: 1.2 calories / gram
+- Lean ground beef: 1.8 calories / gram
+- Eggs: 1.55 calories / gram
+- White fish e.g., Tilapia: 1.2 calories / gram
+
+**More calorically dense:**
+
+- Beef: 2.7 calories / gram
+- Salmon: 2.3 calories / gram
+
+### Carbs (1g of carbs = 4 calories)
+
+**Less calorically dense:**
+
+- Pumpkin: 0.4 calories / gram
+- Potato: 0.77 calories / gram
+- Sweet Potato: 0.86 calories / gram
+
+**More calorically dense:**
+
+- Oats: 3.8 calories / gram
+- Rice (cooked): 1.3 calories / gram
+- Pasta: 1.6 calories / gram
+
+### Fats (1g of fat = 9 calories)
+
+**Less calorically dense:**
+
+- Salmon, Eggs, Red Meat provide a healthy source of fats (I typically get my fats from my fattier sources of proteins)
+- PB2 (Peanut Butter): 3.8 calories / gram
+
+**More calorically dense:**
+
+- Avocados: 1.6 calories / gram
+- Butter / Oil: 9 calories / gram
+- Nut Butters: 6 calories / gram
+
+## Some other helpful tips / tricks
+
+### Prioritise Protein
+
+**Why it helps:**
+- Keeps you feeling full longer
+- Has a higher thermic effect (your body burns more calories digesting it)
+- Aim for 1g of protein per lb of body weight
+- Still need carbs for energy and fats for hormone regulation
+
+### Fruits and Vegetables
+
+**High volume, low calories** - perfect for feeling satisfied. Some of my favourites:
+- Mushrooms
+- Broccoli  
+- Cauliflower
+
+### Artificial Sweeteners
+
+**Safe and effective:**
+- No long-term negative side effects shown in studies
+- Great for curbing sweet cravings
+- Can save 150+ calories (e.g., Coke Zero instead of regular Coke)
+- Available in: No-sugar Jello, Ice-cream, Maple Syrup, and more
+
+### Sauces / Dressing
+
+**Watch out:** Can add 150+ calories to a salad without you noticing.
+
+**Better alternatives:**
+- Hot Sauce
+- Nandos sauce
+- Fat-Free Mayo
+- Soy sauce
+- Or simply ask for sauce on the side!
+
+**Pro tip:** Low calorie recipes and cookbooks like [this one](https://www.gregdoucette.com/collections/books) can help you get creative with your substitutes!
+
+---
+
+**Remember:** To help yourself feel more full on a calorie deficit - prioritise foods which are less calorically dense!
+`,
+    },
   ]
   
   export function getBlogBySlug(slug: string): Blog | undefined {
